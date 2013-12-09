@@ -26,7 +26,7 @@ pub mod deque;
 pub mod char;
 pub mod clone;
 pub mod cmp;
-#[cfg(libc)]
+#[cfg(libc, pthread)]
 pub mod concurrent;
 pub mod container;
 pub mod fail;
@@ -47,7 +47,7 @@ pub mod priority_queue;
 pub mod ptr;
 pub mod slice;
 pub mod str;
-#[cfg(libc)]
+#[cfg(libc, pthread)]
 pub mod thread;
 pub mod vec;
 
